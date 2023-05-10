@@ -19,5 +19,12 @@ return {
      {
           "christoomey/vim-tmux-navigator",
           lazy = false
-     }
+     },
+     {
+          dir = "/home/sasha/.config/nvim/lua/user/plugins/my-plugin",
+          lazy = false,
+          config = function()
+               require('my-plugin').setup()
+          end
+     },
 }
