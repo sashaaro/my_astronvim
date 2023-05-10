@@ -9,4 +9,15 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+     {
+          "phaazon/hop.nvim",
+          event = {"BufEnter"},
+          config = function()
+               require("hop").setup()
+          end,
+     },
+     {
+          "christoomey/vim-tmux-navigator",
+          lazy = false
+     }
 }
